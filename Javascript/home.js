@@ -110,3 +110,51 @@ console.log("Hello");
          console.log(fruit[2]);
          console.log(fruit.split(','));  // Split by comma
          console.log(fruit.split(''));  // Split by character
+
+        // Array
+        let fruits = ['banana', 'apple', 'orange', 'pineapple'];
+        fruits = new Array('banana', 'apple', 'orange', 'pineapple');
+
+        console.log(fruits[2]); // access value at 2nd
+
+        fruits[0] = 'peer';
+        console.log(fruits);
+
+        for (let i = 0; i < fruits.length; i++) {
+            console.log(fruits[i]);
+        }
+
+        // array common methods
+        console.log('to string', fruits.toString());
+        console.log(fruits.join('*'));
+        console.log(fruits.pop(), fruits); // removes last element
+        console.log(fruits.push('blackberries'), fruits);  // appends
+        console.log(fruits[4]);
+        fruits[fruits.length] = 'new fruit';  // same as push
+        console.log(fruits);
+        fruits.shift();  // removes first element from an array
+        console.log(fruits);
+        console.log(fruits.unshift('kiwi'));  // add first element to an array
+        console.log(fruits);
+
+        let vegetables = ['asparagus', 'tamatoes', 'brocoli'];
+        let allGroceries = fruits.concat(vegetables);  // combine arrays
+        console.log(allGroceries);
+        console.log(allGroceries.slice(1, 4));
+        console.log(allGroceries.reverse());
+        console.log(allGroceries.sort());
+
+        let someNumbers = [5, 53, 66, 66, 33, 2, 6, 4, 7, 2, 0, 6767, 4];
+        console.log(someNumbers.sort(function(a, b) {return a-b;}));  // sort in ascending order
+        console.log(someNumbers.sort(function(a, b) {return b-a;}));  // sort in decending order
+
+        let emptyArray = [];
+        for (let num = 0; num <= 10; num++) {
+            emptyArray.push(num);
+        }
+        console.log(emptyArray);
+
+        // Object in javascript
+        // Dictionaries in python
+
+        
