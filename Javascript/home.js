@@ -175,3 +175,42 @@ console.log("Hello");
         console.log(student.age);
 
         console.log(student.studentInfo());
+
+        // conditionals, control flow (if else)
+        // 18 - 35 is my target demographic
+        // && and
+        // || or
+        var age = prompt('what is your age');
+        if ( (age >= 18) && (age <= 35)) {
+            status = 'target demo';
+            console.log(status);
+        } else {
+            status = 'not my audience';
+            console.log(status);
+        }
+
+        // switch ststement
+        // differentiate between weedays vs. weekend 
+        // day 0 --> Sunday --> weekend
+        // day 1 --> Monday --> weekday
+        // day 2 --> Tuesday --> weekday
+        // day 3 --> Wednesday --> weekday
+        // day 4 --> Thursday --> weekday
+        // day 5 --> Friday --> weekend
+        // day 6 --> Saturday --> weekend
+
+        switch (2) {
+            case 0:
+                text = "weekend";
+                break;
+            case 5:
+                text = "weekend";
+                break;
+            case 6:
+                text = "weekend";
+                break;
+            default:
+                text = "weekday";
+        }
+
+        console.log(text);
