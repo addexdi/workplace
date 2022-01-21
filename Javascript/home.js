@@ -157,4 +157,21 @@ console.log("Hello");
         // Object in javascript
         // Dictionaries in python
 
-        
+        let student = {
+            first: 'Adam',
+            last: 'Ibrahim',
+            age: 21,
+            height: 150,
+            studentInfo: function(){
+                return this.first + '\n' + this.last;
+            } 
+        };
+
+        // console.log(student.first);
+        // console.log(student.last);
+        // student.first = 'notAdam';  // change value
+        // console.log(student.first);
+        student.age++;
+        console.log(student.age);
+
+        console.log(student.studentInfo());
