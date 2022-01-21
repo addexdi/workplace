@@ -95,3 +95,18 @@ console.log("Hello");
          let grocerires = ["apple", "banana", "orandes"]; // Array
          let random; // undefined
          let nothing = null; // Value null
+
+         // String in Javascript (common methods)
+         let fruit = "banana,apple,orange,blackberry";
+         let moreFruit = "banana\napple";
+
+         console.log(fruit.length);
+         console.log(fruit.indexOf('nan'));
+         console.log(fruit.slice(2, 6));
+         console.log(fruit.replace('ban', '123'));
+         console.log(fruit.toUpperCase());
+         console.log(fruit.toLowerCase());
+         console.log(fruit.charAt(2));
+         console.log(fruit[2]);
+         console.log(fruit.split(','));  // Split by comma
+         console.log(fruit.split(''));  // Split by character
